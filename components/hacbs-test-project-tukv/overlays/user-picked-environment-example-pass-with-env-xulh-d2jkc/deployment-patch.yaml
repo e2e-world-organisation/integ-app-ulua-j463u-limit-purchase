@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-tukv
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/quay-or-not-to-quay/nbe-e2e-umqe-tenant/integ-app-ulua/hacbs-test-project-tukv@sha256:00b1396931eb2c1d9672cf74a9b87d3a593b81e03d6fb6163a784fa2f3661ac5
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
